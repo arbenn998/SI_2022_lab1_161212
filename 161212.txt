@@ -1,0 +1,122 @@
+1.  git clone https://github.com/arbenn998/SI_2022_lab1_161212.git
+2.  git add shopping_list.txt
+3.  git commit -m "Add 5 items to the shopping list"
+4.  git add shopping_list.txt
+5.  git commit -m "Add quantities to the items"
+6.  git branch branch1
+7.  git branch branch2
+8.  git log
+commit e347ca116ae4e895ae6523ec17d20181bf372be7 (HEAD -> master, branch2, branch1)
+Author: arbenn998 <arben.161212@gmail.com>
+Date:   Fri Apr 8 14:52:21 2022 +0200
+
+    Add quantities to the items
+
+commit fbc7f6e044c5a6779278f739db782f25a328aa78
+Author: arbenn998 <arben.161212@gmail.com>
+Date:   Fri Apr 8 14:44:33 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit bf75599d308336d2014e51f7e0306bacaccf2bac (origin/master, origin/HEAD)
+Author: Arben Limani <63655753+arbenn998@users.noreply.github.com>
+Date:   Fri Apr 8 14:15:26 2022 +0200
+
+    Update README.md
+
+commit a69a62343bd350635b2f952a68edd89684f41194
+Author: Arben Limani <63655753+arbenn998@users.noreply.github.com>
+Date:   Fri Apr 8 14:13:47 2022 +0200
+
+    Initial commit
+
+9.  git push origin master
+10. git checkout branch1
+11. git push origin branch1
+12. git checkout branch2
+13. git push origin branch2
+14. git checkout branch1
+15. git add shopping_list.txt
+16. git commit -m "Change quantity of item #5"
+17. git checkout master
+18. git add .
+19. git commit -m "Change quantity of item #2"
+20. git push --all origin
+21. git checkout branch2
+22. git add .
+23. git commit -m "Modify item #4"
+24. git log
+commit 2bee3c80a88b4d69442f0b6e955c54f615eec633 (HEAD -> branch2)
+Author: arbenn998 <arben.161212@gmail.com>
+Date:   Fri Apr 8 15:34:01 2022 +0200
+
+    Modify item #4
+
+commit e347ca116ae4e895ae6523ec17d20181bf372be7 (origin/branch2)
+Author: arbenn998 <arben.161212@gmail.com>
+Date:   Fri Apr 8 14:52:21 2022 +0200
+
+    Add quantities to the items
+
+commit fbc7f6e044c5a6779278f739db782f25a328aa78
+Author: arbenn998 <arben.161212@gmail.com>
+Date:   Fri Apr 8 14:44:33 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit bf75599d308336d2014e51f7e0306bacaccf2bac
+Author: Arben Limani <63655753+arbenn998@users.noreply.github.com>
+Date:   Fri Apr 8 14:15:26 2022 +0200
+
+    Update README.md
+
+commit a69a62343bd350635b2f952a68edd89684f41194
+Author: Arben Limani <63655753+arbenn998@users.noreply.github.com>
+Date:   Fri Apr 8 14:13:47 2022 +0200
+
+    Initial commit
+
+25. git add .
+26. git commit --amend -m "Modify item #4 and add item #6"
+27. git log
+commit 95d5a3032e93c80c6983a546d5639983d9cea36e (HEAD -> branch2)
+Author: arbenn998 <arben.161212@gmail.com>
+Date:   Fri Apr 8 15:34:01 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit e347ca116ae4e895ae6523ec17d20181bf372be7 (origin/branch2)
+Author: arbenn998 <arben.161212@gmail.com>
+Date:   Fri Apr 8 14:52:21 2022 +0200
+
+    Add quantities to the items
+
+commit fbc7f6e044c5a6779278f739db782f25a328aa78
+Author: arbenn998 <arben.161212@gmail.com>
+Date:   Fri Apr 8 14:44:33 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit bf75599d308336d2014e51f7e0306bacaccf2bac
+Author: Arben Limani <63655753+arbenn998@users.noreply.github.com>
+Date:   Fri Apr 8 14:15:26 2022 +0200
+
+    Update README.md
+
+commit a69a62343bd350635b2f952a68edd89684f41194
+Author: Arben Limani <63655753+arbenn998@users.noreply.github.com>
+Date:   Fri Apr 8 14:13:47 2022 +0200
+
+    Initial commit
+
+28. git checkout master
+29. git merge branch1
+30. git merge branch2 
+-- pri izvrsuvanje na ova komanda se pojavija konflikti, kako vo navedeniot tekst
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Manuelna promena na datotekata shopping_list.txt, da prifaka poslednite promeni od pobaruvanjata na zadacata.
+Pritoa gi dodadovme promenite so git add . i isto taka gi komitiravme preku git commit -m "Resolve merge conflicts between master and branch2"
+So toa se resi prethodniot konflikt so merguvanjeto.
